@@ -13,5 +13,5 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
      * from product
      * where selling_status in ('SELLING', 'HOLD');
      */
-    List<Product> findAllBySellingStatusIn(List<ProductSellingStatus> sellingTypes);
+    List<Product> findAllBySellingStatusIn(List<ProductSellingStatus> sellingStatuses);
 }
